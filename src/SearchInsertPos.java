@@ -1,4 +1,6 @@
 // 35. Search Insert Position
+
+public class SearchInsertPos {
     class Solution {
         public int searchInsert(int[] nums, int target) {
             for(int i = 0; i < nums.length; i++){
@@ -9,4 +11,4 @@
             return nums.length;
         }
     }
-
+}
