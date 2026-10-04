@@ -7,5 +7,5 @@ public static int countSetBits(int n) {
     return count;
 }
 void main(){
-    System.out.println(countSetBits(13));
+    System.out.println(countSetBits(5));
 }
