@@ -1,4 +1,4 @@
-static int removedup(int[] arr){
+int removedup(int[] arr){
     int i=0;
     for(int j=1;j<arr.length;j++){
         if(arr[j] != arr[i]){
@@ -9,7 +9,8 @@ static int removedup(int[] arr){
     return i+1;
 }
 
-void main(){Scanner sc = new Scanner(System.in);
+void main(){
+    Scanner sc = new Scanner(System.in);
     System.out.print("Enter the number of elements in the array: ");
     int n = sc.nextInt();
     int[] array = new int[n];
