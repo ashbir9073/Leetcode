@@ -14,9 +14,18 @@ public static int[] ThreeSum(int[] arr, int target) {
 }
 
 public static void main(String[] args){
-    int [] arr = {1,2,3,4,5,6,7,8,9,10};
-    int target = 9;
-    int[] result = ThreeSum(arr,target);
-    System.out.println(Arrays.toString(result));
+    Scanner sc = new Scanner(System.in);
+    System.out.print("Enter the number of elements in the array: ");
+    int n = sc.nextInt();
+    int[] arr = new int[n];
+    for(int i = 0; i < n; i++){
+        System.out.print("Enter " + i + " element : ");
+        arr[i] = sc.nextInt();
+    }
+    System.out.print("Enter the Target: ");
+    int sum = sc.nextInt();
+    System.out.println(Arrays.toString(ThreeSum(arr, sum)));
+
+
 }
 
